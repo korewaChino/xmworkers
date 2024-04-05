@@ -6,6 +6,7 @@
     # Rewrite any path that isn't a file to the root
     rewrite /dashboard /
     rewrite /settings /
+    rewrite /worker/* /
 
 }
 
