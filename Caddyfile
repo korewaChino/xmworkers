@@ -1,0 +1,14 @@
+# Expose files from /app
+
+:8080 {
+    root * /app
+    file_server
+    # Rewrite any path that isn't a file to the root
+    rewrite /dashboard /
+    rewrite /settings /
+
+}
+
+
+# expose to port 80
+
